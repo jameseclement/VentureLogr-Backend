@@ -4,7 +4,7 @@ class CreateEntries < ActiveRecord::Migration[5.2]
       t.string :title
       t.text :story
       t.date :date
-      t.string :trip_id
+      t.integer :trip_id
 
       t.timestamps
     end

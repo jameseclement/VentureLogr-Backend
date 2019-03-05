@@ -5,6 +5,6 @@ Rails.application.routes.draw do
         resources :entries, except: [:new, :edit]
         resources :photos, except: [:new, :edit]
       end
-    end 
+    end
 
 end

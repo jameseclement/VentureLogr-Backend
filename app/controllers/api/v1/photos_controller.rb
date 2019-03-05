@@ -35,7 +35,7 @@ class Api::V1::PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photo).permit(:caption, :entry_id)
+    params.require(:photo).permit(:caption, :url, :entry_id)
   end
 
   def find_photo

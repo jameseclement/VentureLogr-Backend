@@ -37,7 +37,7 @@ class Api::V1::EntriesController < ApplicationController
   private
 
   def entry_params
-    params.require(:entry).permit(:title, :date, :story, :trip_id)
+    params.require(:entry).permit(:title, :date, :story, :trip_id, :photos => [:caption, :url, :entry_id])
   end
 
   def find_entry
