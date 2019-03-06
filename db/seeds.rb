@@ -20,16 +20,16 @@ Ut ullamcorper scelerisque erat, tincidunt commodo erat vehicula at. Suspendisse
 story3 = "Sed lobortis tempor egestas. Quisque venenatis mattis quam a fringilla. Ut non lobortis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare sapien quis lorem ornare porttitor. In tincidunt vestibulum elit, et tincidunt ex tempus vitae. Ut scelerisque felis tortor, vitae cursus nisl eleifend eu. Suspendisse egestas nunc sit amet nisi pharetra, et ultricies augue condimentum. Donec vel tortor vel turpis hendrerit tempor eu a elit. Mauris mollis diam nec maximus finibus. Mauris ligula lacus, cursus eget leo a, ornare sollicitudin ligula. Aenean varius congue tellus non ullamcorper. Donec vitae gravida ex."
 
 indonesia = Trip.create(title: "Indonesia Fall 2016", date: Date.parse("October 1, 2016"), location: "Indonesia", description: story4,
-  photo: 'https://cdn.britannica.com/s:700x450/66/183666-004-EB7D9DA1.jpg')
+  photo: 'https://i.imgur.com/SXp7RmY.jpg')
 
 japan = Trip.create(title: "Japan Spring 2016", date: Date.parse("March 1, 2016"), location: "Japan", description: story4,
-photo: 'http://www.globalblue.com/corporate/market-insights/article685045.ece/alternates/LANDSCAPE2_970/Tokyo.jpg')
+photo: 'https://i.imgur.com/UJi0BaS.jpg')
 
 aus = Trip.create(title: "Australia Summer 2016", date: Date.parse("June 1, 2016"), location: "Sydney", description: story4,
-photo: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Australia_Day.jpg')
+photo: 'https://i.imgur.com/Ukq391G.jpg')
 
 southafrica = Trip.create(title: "South Africa Winter 2017", date: Date.parse("Feb 1, 2017"), location: "Cape Town", description: story4 ,
-photo: 'http://www.travelstart.co.za/blog/wp-content/uploads/2018/05/main-best-time-to-visit-cape-town.jpg')
+photo: 'https://i.imgur.com/WGevmOm.jpg')
 
 
 indonesia_day_1 = Entry.create({ title: "Day 1" , date: Date.parse("October 1, 2016"), story: story1, trip: indonesia})
@@ -50,18 +50,34 @@ southafrica_day_4 = Entry.create({ title: "Day 4" , date: Date.parse("February 4
 japan_day_1 = Entry.create({ title: "Day 1" , date: Date.parse("March 1, 2016"), story: story1, trip: japan})
 japan_day_2 = Entry.create({ title: "Day 2" , date: Date.parse("March 2, 2016"), story: story1, trip: japan})
 japan_day_3 = Entry.create({ title: "Day 3" , date: Date.parse("March 3, 2016"), story: story3, trip: japan})
+japan_day_4 = Entry.create({ title: "Day 4" , date: Date.parse("March 4, 2016"), story: story1, trip: japan})
+japan_day_5 = Entry.create({ title: "Day 5" , date: Date.parse("March 5, 2016"), story: story1, trip: japan})
+japan_day_6 = Entry.create({ title: "Day 6" , date: Date.parse("March 6, 2016"), story: story3, trip: japan})
+japan_day_7 = Entry.create({ title: "Day 7" , date: Date.parse("March 7, 2016"), story: story1, trip: japan})
+japan_day_8 = Entry.create({ title: "Day 8" , date: Date.parse("March 8, 2016"), story: story1, trip: japan})
+japan_day_9 = Entry.create({ title: "Day 9" , date: Date.parse("March 9, 2016"), story: story3, trip: japan})
+japan_day_10 = Entry.create({ title: "Day 10" , date: Date.parse("March 10, 2016"), story: story1, trip: japan})
+japan_day_11 = Entry.create({ title: "Day 11" , date: Date.parse("March 11, 2016"), story: story1, trip: japan})
+japan_day_12 = Entry.create({ title: "Day 12" , date: Date.parse("March 12, 2016"), story: story3, trip: japan})
 
 
 
 
 japanPic1 = Photo.create({url: "https://i.imgur.com/P9IVqkS.jpg", caption: "Pic1", entry: japan_day_1 })
-japanPic2 = Photo.create({url: "https://i.imgur.com/2ybf4Yrb.jpg", caption: "Pic1", entry: japan_day_1})
-japanPic3 = Photo.create({url: "https://i.imgur.com/20LFfwKb.jpg", caption: "Pic1", entry: japan_day_2})
-japanPic4 = Photo.create({url: "https://i.imgur.com/HOSg2FCb.jpg", caption: "Pic1", entry: japan_day_2})
-japanPic5 = Photo.create({url: "https://i.imgur.com/RlIjY5kb.jpg", caption: "Pic1", entry: japan_day_3})
-japanPic6 = Photo.create({url: "https://i.imgur.com/0Qe4lG7b.jpg", caption: "Pic1", entry: japan_day_3})
-japanPic5 = Photo.create({url: "https://i.imgur.com/RlIjY5kb.jpg", caption: "Pic1", entry: japan_day_1})
-japanPic6 = Photo.create({url: "https://i.imgur.com/0Qe4lG7b.jpg", caption: "Pic1", entry: japan_day_1})
+japanPic2 = Photo.create({url: "https://i.imgur.com/lbE1j2e.jpg", caption: "Pic1", entry: japan_day_1})
+japanPic3 = Photo.create({url: "https://i.imgur.com/U7KEDdU.jpg", caption: "Pic1", entry: japan_day_1})
+japanPic4 = Photo.create({url: "https://i.imgur.com/Ypm8yp6.jpg", caption: "Pic1", entry: japan_day_1})
+
+japanPic5 = Photo.create({url: "https://i.imgur.com/X2tZxzn.jpg", caption: "Pic1", entry: japan_day_2})
+japanPic6 = Photo.create({url: "https://i.imgur.com/hrzB4BT.jpg", caption: "Pic1", entry: japan_day_2})
+japanPic7 = Photo.create({url: "https://i.imgur.com/Iu3RA0m.jpg", caption: "Pic1", entry: japan_day_2})
+japanPic8 = Photo.create({url: "https://i.imgur.com/TqYbkf9.jpg", caption: "Pic1", entry: japan_day_2})
+
+japanPic9  = Photo.create({url: "https://i.imgur.com/gXuYHn8.jpg", caption: "Pic1", entry: japan_day_3})
+japanPic10 = Photo.create({url: "https://i.imgur.com/WlhfN9X.jpg", caption: "Pic1", entry: japan_day_3})
+
+japanPic11 = Photo.create({url: "https://i.imgur.com/3YENql9.jpg", caption: "Pic1", entry: japan_day_3})
+japanPic12 = Photo.create({url: "https://i.imgur.com/vIudgLG.jpg", caption: "Pic1", entry: japan_day_3})
 
 # ausPic1 = Photo.create({url: "https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/2230/SITours/sydney-tour-with-optional-sydney-harbour-lunch-cruise-in-sydney-115286.jpg", caption: "Pic1", entry: aus_day_1 })
 # ausPic2 = Photo.create({url: "https://www.e-architect.co.uk/images/jpgs/sydney/cook_phillip_park_b220312_ab2.jpg", caption: "Pic1", entry: aus_day_1})
