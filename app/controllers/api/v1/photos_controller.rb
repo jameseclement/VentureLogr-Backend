@@ -7,6 +7,7 @@ class Api::V1::PhotosController < ApplicationController
 
   def create
     @photo = Photo.create(photo_params)
+    @photo.image.attach(params[:image])
     if @photo.save
       render json: @photo, status: :accepted
     else
@@ -35,7 +36,8 @@ class Api::V1::PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photo).permit(:caption, :url, :entry_id, :image)
+    params.permit(:caption, :url, :entry_id)
+    # params.require(:photo).permit(:caption, :url, :entry_id, :image)
   end
 
   def find_photo
